@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>base</title>
+    <meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+
+<link rel="stylesheet" href="/portfolio-sisr/css/bootstrap.min.css"/>
+<link rel="stylesheet" href="/portfolio-sisr/css/layouts/main.css"/>
+<link rel="stylesheet" href="/portfolio-sisr/css/navigators/navbar.css"/>
+<link rel="stylesheet" href="/portfolio-sisr/css/plyr.css"/>
+<link rel="stylesheet" href="/portfolio-sisr/css/flag-icon.min.css"/>
+
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Muli:wght@300;400;500;600">
+
+
+<link rel="stylesheet" href="/portfolio-sisr/fontawesome/css/all.min.css"/>
+
+
+
+
+  
+
+  
+  
+  
+    
+  
+  
+
+  <link rel="icon" type="image/png" href="/portfolio-sisr/images/site/favicon_hued48f37b2456016ed097988ee7438af3_5560_42x0_resize_box_3.png" />
+
+<meta property="og:title" content="base" />
+<meta property="og:description" content="Installation Téléchargement du script
+Invoke-WebRequest -OutFile ansible.ps1 https://raw.githubusercontent.com/ansible/ansible/devel/examples/scripts/ConfigureRemotingForAnsible.ps1 Lancement du script
+.\ansible.ps1 -CertValidityDays 3650 -EnableCredSSP     Condition     " />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://sebastienct.github.io/portfolio-sisr/notes/ansible/windows/base/" /><meta property="article:section" content="notes" />
+
+
+
+
+
+    
+    
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/styles/atom-one-dark.min.css"
+  />
+  <link rel="stylesheet" href="/portfolio-sisr/css/layouts/notes.css">
+  <link rel="stylesheet" href="/portfolio-sisr/css/navigators/sidebar.css">
+
+
+    
+
+
+
+
+</head>
+
+  <body data-spy="scroll" data-target="#TableOfContents" data-offset="80">
+    <div class="container-fluid bg-dimmed wrapper">
+      
+      
+    
+
+
+
+
+
+  
+
+
+  
+
+
+
+
+  
+  
+    
+  
+  
+
+
+
+  
+  
+    
+  
+  
+
+
+<nav class="navbar navbar-expand-xl top-navbar final-navbar shadow">
+  <div class="container">
+      <button class="navbar-toggler navbar-light" id="sidebar-toggler" type="button" onclick="toggleSidebar()">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <a class="navbar-brand" href="/portfolio-sisr">
+      
+        <img src="/portfolio-sisr/images/site/main-logo_huc0b6bb12e76a1d3358058d4580061e41_24761_42x0_resize_box_3.png" alt="Logo">
+      Portfolio SIO SISR de Sébastien C</a>
+    <button class="navbar-toggler navbar-light" id="toc-toggler" type="button" onclick="toggleTOC()">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse lang-selector" id="top-nav-items">
+      <ul class="navbar-nav ml-auto">
+      
+      </ul>
+    </div>
+  </div>
+  
+  
+    <img src="/portfolio-sisr/images/site/main-logo_huc0b6bb12e76a1d3358058d4580061e41_24761_42x0_resize_box_3.png" class="d-none" id="main-logo" alt="Logo">
+  
+  
+    <img src="/portfolio-sisr/images/site/inverted-logo_hu59d20ab0b234aa7b5b07b908c96abbc6_24893_42x0_resize_box_3.png" class="d-none" id="inverted-logo" alt="Inverted Logo">
+  
+</nav>
+
+
+
+      
+      
+  
+  
+
+  <section class="sidebar-section" id="sidebar-section">
+    <div class="sidebar-holder">
+      <div class="sidebar" id="sidebar">
+        <form class="mx-auto" method="get" action="/portfolio-sisr/search">
+          <input type="text" name="keyword" value="" placeholder="" data-search="" id="search-box" />
+        </form>
+        <div class="sidebar-tree">
+          <ul class="tree" id="tree">
+            <li id="list-heading"><a href="/portfolio-sisr/notes" data-filter="all">Remarques</a></li>
+            <div class="subtree">
+                
+  
+  
+  
+  
+    
+    
+  
+  
+    
+    <li>
+      <i class="fas fa-minus-circle"></i><a class="active" href="/portfolio-sisr/notes/ansible/">Ansible</a>
+      
+      <ul class="active">
+        
+  
+  
+  
+  
+  
+    
+    <li>
+      <i class="fas fa-plus-circle"></i><a class="" href="/portfolio-sisr/notes/ansible/general/">Astuces Générales</a>
+      
+      <ul class="">
+        
+  
+  
+  
+  
+  
+    
+    <li><a class="" href="/portfolio-sisr/notes/ansible/general/install/" title="Installation">Installation</a></li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li><a class="" href="/portfolio-sisr/notes/ansible/general/items/" title="Gestion des items">Gestion des items</a></li>
+  
+
+
+      </ul>
+    </li>
+  
+
+  
+  
+  
+  
+    
+    
+  
+  
+    
+    <li>
+      <i class="fas fa-minus-circle"></i><a class="active" href="/portfolio-sisr/notes/ansible/windows/">windows</a>
+      
+      <ul class="active">
+        
+  
+  
+  
+  
+    
+    
+  
+  
+    
+    <li><a class="active" href="/portfolio-sisr/notes/ansible/windows/base/" title="Bases Windows">Bases Windows</a></li>
+  
+
+
+      </ul>
+    </li>
+  
+
+
+      </ul>
+    </li>
+  
+
+
+            </div>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+      
+      
+<section class="content-section" id="content-section">
+  <div class="content container-fluid" id="content">
+    <div class="container-fluid note-card-holder" id="note-card-holder">
+      <!-- Installation -->
+<div class="note-card ">
+    <div class="item">
+        <h5 class="note-title"><span>Installation</span></h5>
+        
+            <div class="card">
+                <div class="card-body"><p>Téléchargement du script</p>
+<pre tabindex="0"><code>Invoke-WebRequest -OutFile ansible.ps1 https://raw.githubusercontent.com/ansible/ansible/devel/examples/scripts/ConfigureRemotingForAnsible.ps1
+</code></pre><p>Lancement du script</p>
+<pre tabindex="0"><code>.\ansible.ps1 -CertValidityDays 3650 -EnableCredSSP
+</code></pre></div>
+            </div>
+        
+    </div>
+</div>
+
+<!-- Condition -->
+<div class="note-card ">
+    <div class="item">
+        <h5 class="note-title"><span>Condition</span></h5>
+        
+            <div class="card">
+                <div class="card-body"><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"></code></pre></div></div>
+            </div>
+        
+    </div>
+</div>
+
+
+    </div>
+  </div>
+</section>
+
+
+      
+       
+    </div>
+
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+
+  
+  
+    
+    
+      
+    
+  
+
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+
+  
+  
+  
+    
+  
+  
+
+  
+  
+  
+
+  <footer id="footer" class="container-fluid text-center align-content-center footer pb-2">
+    <div class="container pt-5">
+      <div class="row text-left">
+        
+        <div class="col-md-4 col-sm-12">
+          <h5>Navigation</h5>
+          
+          <ul>
+              
+                
+                
+                  
+                
+                <li class="nav-item">
+                  <a class="smooth-scroll" href="https://sebastienct.github.io/portfolio-sisr/#about">A propos</a>
+                </li>
+              
+              
+                
+                
+                  
+                
+                <li class="nav-item">
+                  <a class="smooth-scroll" href="https://sebastienct.github.io/portfolio-sisr/#skills">Compétences</a>
+                </li>
+              
+              
+                
+                
+                  
+                
+                <li class="nav-item">
+                  <a class="smooth-scroll" href="https://sebastienct.github.io/portfolio-sisr/#experiences">Experiences</a>
+                </li>
+              
+              
+              
+                
+                
+                  
+                
+                <li class="nav-item">
+                  <a class="smooth-scroll" href="https://sebastienct.github.io/portfolio-sisr/#projects">Entreprises</a>
+                </li>
+              
+              
+              
+                
+                
+                  
+                
+                <li class="nav-item">
+                  <a class="smooth-scroll" href="https://sebastienct.github.io/portfolio-sisr/#accomplishments">Formations</a>
+                </li>
+              
+              
+                
+                
+                  
+                
+                <li class="nav-item">
+                  <a class="smooth-scroll" href="https://sebastienct.github.io/portfolio-sisr/#recent-posts">Procédures BTS</a>
+                </li>
+              
+            
+              
+            
+          </ul>
+          
+        </div>
+        
+        
+        
+        
+          
+          <div class="col-md-4 col-sm-12">
+            <p>Restez à jour par e-mail</p>
+            
+              <form method='post' action='https://blogtrottr.com'>
+              <div class="form-group">
+              <input type='email' class="form-control" name='btr_email' placeholder="Entrez une adresse e-mail"/><br />
+              <input type='hidden' name='btr_url' value='https://sebastienct.github.io/portfolio-sisr/index.xml' />
+              <input type='hidden' name='schedule_type' value='1' />
+              <small id="emailHelp" class="form-text text-muted">En renseignant votre adresse e-mail, vous acceptez de recevoir la newsletter de ce site.</small>
+              <button type="submit" class="btn btn-info"> Envoyer </button>
+              </div>
+              </form>
+            
+          </div>
+        
+      </div>
+    </div>
+    
+    <hr />
+    <div class="container">
+      <p id="disclaimer"><strong>Avis de responsabilité:</strong> Le contenu du site est sous l&rsquo;unique propriété de son auteur. Hébergé sur Github.com, Framework Hugo, Theme, hugo-Toha</p>
+    </div>
+    
+    
+    <hr />
+    <div class="container">
+      <div class="row text-left">
+        <div class="col-md-4">
+          <a id="theme" href="https://github.com/hossainemruz/toha" target="_blank" rel="noopener">
+            <img src="/portfolio-sisr/images/theme-logo_hu8376fd15465fef26ffe66b6bcf0ca686_13669_32x0_resize_box_3.png" alt="Toha Theme Logo">
+            Toha
+          </a>
+        </div>
+        <div class="col-md-4 text-center">© 2022 MIT.</div>
+        <div class="col-md-4 text-right">
+          <a id="hugo" href="https://gohugo.io/" target="_blank" rel="noopener">Alimenté par
+          <img
+            src="/portfolio-sisr/images/hugo-logo.svg"
+            alt="Hugo Logo"
+            height="18"
+          />
+          </a>
+        </div>
+      </div>
+    </div>
+    
+  </footer>
+
+
+    <script type="text/javascript" src="/portfolio-sisr/js/jquery-3.4.1.min.js"></script>
+<script type="text/javascript" src="/portfolio-sisr/js/popper.min.js"></script>
+<script type="text/javascript" src="/portfolio-sisr/js/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="/portfolio-sisr/js/navbar.js"></script>
+<script type="text/javascript" src="/portfolio-sisr/js/plyr.js"></script>
+<script type="text/javascript" src="/portfolio-sisr/js/main.js"></script>
+
+
+    
+    
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/highlight.min.js"></script>
+  <script src="/portfolio-sisr/js/imagesloaded.pkgd.min.js"></script>
+  <script src="/portfolio-sisr/js/note.js"></script>
+  <script>
+    hljs.initHighlightingOnLoad();
+  </script>
+  
+
+
+    
+</body>
+</html>

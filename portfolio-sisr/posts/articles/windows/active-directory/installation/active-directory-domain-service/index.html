@@ -1,0 +1,993 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>AD Domain Service</title>
+    <meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+
+<link rel="stylesheet" href="/portfolio-sisr/css/bootstrap.min.css"/>
+<link rel="stylesheet" href="/portfolio-sisr/css/layouts/main.css"/>
+<link rel="stylesheet" href="/portfolio-sisr/css/navigators/navbar.css"/>
+<link rel="stylesheet" href="/portfolio-sisr/css/plyr.css"/>
+<link rel="stylesheet" href="/portfolio-sisr/css/flag-icon.min.css"/>
+
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Muli:wght@300;400;500;600">
+
+
+<link rel="stylesheet" href="/portfolio-sisr/fontawesome/css/all.min.css"/>
+
+
+
+
+  
+
+  
+  
+  
+    
+  
+  
+
+  <link rel="icon" type="image/png" href="/portfolio-sisr/images/site/favicon_hued48f37b2456016ed097988ee7438af3_5560_42x0_resize_box_3.png" />
+
+<meta property="og:title" content="AD Domain Service" />
+<meta property="og:description" content="Methode simple d&#39;installation d&#39;un AD." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://sebastienct.github.io/portfolio-sisr/posts/articles/windows/active-directory/installation/active-directory-domain-service/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2021-10-24T00:00:00+00:00" />
+<meta property="article:modified_time" content="2021-10-24T00:00:00+00:00" />
+
+
+
+    
+    
+<meta name="description" content="Methode simple d&#39;installation d&#39;un AD." />
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/styles/atom-one-dark.min.css"
+/>
+<link rel="stylesheet" href="/portfolio-sisr/css/layouts/single.css"/>
+<link rel="stylesheet" href="/portfolio-sisr/css/navigators/sidebar.css">
+
+<link rel="stylesheet" href="/portfolio-sisr/css/style.css"/>
+
+
+
+    
+
+
+
+
+</head>
+
+  <body data-spy="scroll" data-target="#TableOfContents" data-offset="80">
+    <div class="container-fluid bg-dimmed wrapper">
+      
+      
+    
+
+
+
+
+
+  
+
+
+  
+
+
+
+
+  
+  
+    
+  
+  
+
+
+
+  
+  
+    
+  
+  
+
+
+<nav class="navbar navbar-expand-xl top-navbar final-navbar shadow">
+  <div class="container">
+      <button class="navbar-toggler navbar-light" id="sidebar-toggler" type="button" onclick="toggleSidebar()">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <a class="navbar-brand" href="/portfolio-sisr">
+      
+        <img src="/portfolio-sisr/images/site/main-logo_huc0b6bb12e76a1d3358058d4580061e41_24761_42x0_resize_box_3.png" alt="Logo">
+      Portfolio SIO SISR de Sébastien C</a>
+    <button class="navbar-toggler navbar-light" id="toc-toggler" type="button" onclick="toggleTOC()">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse lang-selector" id="top-nav-items">
+      <ul class="navbar-nav ml-auto">
+      
+      </ul>
+    </div>
+  </div>
+  
+  
+    <img src="/portfolio-sisr/images/site/main-logo_huc0b6bb12e76a1d3358058d4580061e41_24761_42x0_resize_box_3.png" class="d-none" id="main-logo" alt="Logo">
+  
+  
+    <img src="/portfolio-sisr/images/site/inverted-logo_hu59d20ab0b234aa7b5b07b908c96abbc6_24893_42x0_resize_box_3.png" class="d-none" id="inverted-logo" alt="Inverted Logo">
+  
+</nav>
+
+
+
+      
+      
+  <section class="sidebar-section" id="sidebar-section">
+    <div class="sidebar-holder">
+      <div class="sidebar" id="sidebar">
+        <form class="mx-auto" method="get" action="/portfolio-sisr/search">
+          <input type="text" name="keyword" value="" placeholder="" data-search="" id="search-box" />
+        </form>
+        <div class="sidebar-tree">
+          <ul class="tree" id="tree">
+            <li id="list-heading"><a href="/portfolio-sisr/posts" data-filter="all">Articles</a></li>
+            <div class="subtree">
+                
+  
+  
+  
+  
+  
+    
+    <li>
+      <i class="fas fa-plus-circle"></i><a class="" href="/portfolio-sisr/posts/entreprise/">Entreprise</a>
+      
+      <ul class="">
+        
+  
+  
+  
+  
+  
+    
+    <li>
+      <i class="fas fa-plus-circle"></i><a class="" href="/portfolio-sisr/posts/entreprise/groupe3/">Groupe-3</a>
+      
+      <ul class="">
+        
+  
+  
+  
+  
+  
+    
+    <li><a class="" href="/portfolio-sisr/posts/entreprise/groupe3/3s/" title="3S Sécurité">3S Sécurité</a></li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li><a class="" href="/portfolio-sisr/posts/entreprise/groupe3/3r/" title="3R Réseaux">3R Réseaux</a></li>
+  
+
+
+      </ul>
+    </li>
+  
+
+
+      </ul>
+    </li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li>
+      <i class="fas fa-plus-circle"></i><a class="" href="/portfolio-sisr/posts/formation/">Formation</a>
+      
+      <ul class="">
+        
+  
+  
+  
+  
+  
+    
+    <li>
+      <i class="fas fa-plus-circle"></i><a class="" href="/portfolio-sisr/posts/formation/publications/">Publications</a>
+      
+      <ul class="">
+        
+  
+  
+  
+  
+  
+    
+    <li><a class="" href="/portfolio-sisr/posts/formation/publications/anglais/" title="Anglais">Anglais</a></li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li><a class="" href="/portfolio-sisr/posts/formation/publications/cultg%C3%A9/" title="Culture Générale">Culture Générale</a></li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li><a class="" href="/portfolio-sisr/posts/formation/publications/veille/" title="Veille Technologique">Veille Technologique</a></li>
+  
+
+
+      </ul>
+    </li>
+  
+
+
+      </ul>
+    </li>
+  
+
+  
+  
+  
+  
+    
+    
+  
+  
+    
+    <li>
+      <i class="fas fa-minus-circle"></i><a class="active" href="/portfolio-sisr/posts/articles/">Procédures</a>
+      
+      <ul class="active">
+        
+  
+  
+  
+  
+  
+    
+    <li>
+      <i class="fas fa-plus-circle"></i><a class="" href="/portfolio-sisr/posts/articles/pfsense/">PFsense</a>
+      
+      <ul class="">
+        
+  
+  
+  
+  
+  
+    
+    <li><a class="" href="/portfolio-sisr/posts/articles/pfsense/installation/" title="Installation">Installation</a></li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li><a class="" href="/portfolio-sisr/posts/articles/pfsense/configuration/" title="Configuration">Configuration</a></li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li><a class="" href="/portfolio-sisr/posts/articles/pfsense/ha/" title="HA">HA</a></li>
+  
+
+
+      </ul>
+    </li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li><a class="" href="/portfolio-sisr/posts/articles/virtualbox/" title="Virtualbox">Virtualbox</a></li>
+  
+
+  
+  
+  
+  
+    
+    
+  
+  
+    
+    <li>
+      <i class="fas fa-minus-circle"></i><a class="active" href="/portfolio-sisr/posts/articles/windows/">Windows</a>
+      
+      <ul class="active">
+        
+  
+  
+  
+  
+    
+    
+  
+  
+    
+    <li>
+      <i class="fas fa-minus-circle"></i><a class="active" href="/portfolio-sisr/posts/articles/windows/active-directory/">Active Directory</a>
+      
+      <ul class="active">
+        
+  
+  
+  
+  
+  
+    
+    <li>
+      <i class="fas fa-plus-circle"></i><a class="" href="/portfolio-sisr/posts/articles/windows/active-directory/gpo/">GPO</a>
+      
+      <ul class="">
+        
+  
+  
+  
+  
+  
+    
+    <li><a class="" href="/portfolio-sisr/posts/articles/windows/active-directory/gpo/msi/" title="MSI">MSI</a></li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li><a class="" href="/portfolio-sisr/posts/articles/windows/active-directory/gpo/password-policy/" title="Politique de mot de passe">Politique de mot de passe</a></li>
+  
+
+
+      </ul>
+    </li>
+  
+
+  
+  
+  
+  
+    
+    
+  
+  
+    
+    <li>
+      <i class="fas fa-minus-circle"></i><a class="active" href="/portfolio-sisr/posts/articles/windows/active-directory/installation/">Installation</a>
+      
+      <ul class="active">
+        
+  
+  
+  
+  
+    
+    
+  
+  
+    
+    <li><a class="active" href="/portfolio-sisr/posts/articles/windows/active-directory/installation/active-directory-domain-service/" title="ADDS">ADDS</a></li>
+  
+
+
+      </ul>
+    </li>
+  
+
+
+      </ul>
+    </li>
+  
+
+
+      </ul>
+    </li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li>
+      <i class="fas fa-plus-circle"></i><a class="" href="/portfolio-sisr/posts/articles/zabbix/">Zabbix</a>
+      
+      <ul class="">
+        
+  
+  
+  
+  
+  
+    
+    <li>
+      <i class="fas fa-plus-circle"></i><a class="" href="/portfolio-sisr/posts/articles/zabbix/agent/">Agent</a>
+      
+      <ul class="">
+        
+  
+  
+  
+  
+  
+    
+    <li><a class="" href="/portfolio-sisr/posts/articles/zabbix/agent/linux/" title="Agent Zabbix pour Linux">Agent Zabbix pour Linux</a></li>
+  
+
+
+      </ul>
+    </li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li>
+      <i class="fas fa-plus-circle"></i><a class="" href="/portfolio-sisr/posts/articles/zabbix/serveur/">Serveur</a>
+      
+      <ul class="">
+        
+  
+  
+  
+  
+  
+    
+    <li>
+      <i class="fas fa-plus-circle"></i><a class="" href="/portfolio-sisr/posts/articles/zabbix/serveur/hote/">Hote</a>
+      
+      <ul class="">
+        
+  
+  
+  
+  
+  
+    
+    <li><a class="" href="/portfolio-sisr/posts/articles/zabbix/serveur/hote/agent/" title="Ajout agent">Ajout agent</a></li>
+  
+
+
+      </ul>
+    </li>
+  
+
+
+      </ul>
+    </li>
+  
+
+
+      </ul>
+    </li>
+  
+
+
+      </ul>
+    </li>
+  
+
+
+            </div>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+      
+      
+<section class="content-section" id="content-section">
+  <div class="content">
+    <div class="container p-0 read-area">
+      
+      <div class="hero-area col-sm-12" id="hero-area" style='background-image: url(https://sebastienct.github.io/portfolio-sisr/portfolio-sisr/posts/articles/windows/active-directory/installation/active-directory-domain-service/images/WS.jpg);'>
+      </div>
+
+      
+      <div class="page-content">
+        <div class="author-profile ml-auto align-self-lg-center">
+          <img class="rounded-circle" src='/portfolio-sisr/images/author/avatar2_hu4b7385ef6960c87033360a63bdd61944_190262_120x120_fit_box_3.png' alt="Author Image">
+          <h5 class="author-name">Sébastien C</h5>
+          <p>dimanche 24 octobre 2021</p>
+        </div>
+
+        <div class="title">
+          <h1>AD Domain Service</h1>
+        </div>
+        
+        <div class="taxonomy-terms">
+            <ul>
+            
+            
+            <li class="rounded"><a href="/portfolio-sisr/tags/windows" class="btn, btn-sm">Windows</a></li>
+            
+            
+            <li class="rounded"><a href="/portfolio-sisr/tags/activedirectory" class="btn, btn-sm">ActiveDirectory</a></li>
+            
+            
+            <li class="rounded"><a href="/portfolio-sisr/tags/dns" class="btn, btn-sm">DNS</a></li>
+            
+          </ul>
+        </div>
+        
+        <div class="post-content" id="post-content">
+          <p>Dans cette procédure sera décrite comment:</p>
+<ul>
+<li>Configurer le nom du serveur</li>
+<li>Ajouter le rôle Active Directory Domain Service</li>
+<li>Créer une Unité d&rsquo;organisation (OU)</li>
+<li>Créer un utilisateur lié à l&rsquo;OU</li>
+</ul>
+<h1 id="configurer-le-serveur">Configurer le Serveur</h1>
+<p>Après avoir installer un nouveau Windows Server ( ici windows 2019 ), ouvrir le Gestionnaire de serveur.</p>
+<p>Dans le menu <strong>Serveur local</strong>, cliquer sur le nom de la machine.</p>
+<img src="images/AD_name.png"
+    
+        alt="Nom de l&#39;ordinateur"
+    
+    
+        width="600"
+    
+    
+        height="400"
+    
+    
+    
+>
+
+<p>Dans la fenêtre qui s&rsquo;ouvre, cliquer sur <strong>modifier</strong>, Attribuer un nom à l&rsquo;ordinateur, ensuite cliquer sur <strong>autre</strong> et changer le suffixe DNS de l&rsquo;ordinateur.</p>
+<p><img src="images/AD_namedomain.png" alt="Nom"></p>
+<p>Valider et redemmarer la machine.</p>
+<h1 id="ajouter-le-rôle-active-directory-domain-service">Ajouter le rôle Active Directory Domain Service</h1>
+<p>Dans le Gestionnaire de Serveur, dans le menu <strong>Tableau de bord</strong>, choisir l&rsquo;option 2: <strong>Ajouter des rôles et des fonctionnalités</strong>.</p>
+<p><img src="images/dashboard.png" alt="dashboard"></p>
+<p>Une fenêtre <strong>Assistant de rôles et de fonctionnalités</strong> s&rsquo;ouvre:</p>
+<ul>
+<li>cliquer sur <strong>suivant</strong></li>
+<li>installation basée sur un role ou une fonctionnalité</li>
+<li>cliquer sur <strong>suivant</strong></li>
+<li>Dans selection de serveur/Pool de serveurs, selectionner le nom de la machine</li>
+<li>cliquer sur <strong>suivant</strong></li>
+<li>Dans <strong>Roles de serveurs</strong>, selectionner <strong>Services AD DS</strong> et <strong>Serveur DNS</strong></li>
+<li>Puis cliquer sur <strong>Ajouter des fonctionnalités</strong></li>
+</ul>
+<p><img src="images/AD_DS.png" alt="AD DS"></p>
+<ul>
+<li>cliquer sur <strong>suivant</strong> 3 fois</li>
+<li>Avant de cliquer sur <strong>Installer</strong>, dans l&rsquo;onglet <strong>Confirmation</strong>, cocher la case <strong>redémarrer automatiquement le serveur</strong>.</li>
+</ul>
+<p><img src="images/ADDS_confirm.png" alt="Confirmation AD DS"></p>
+<ul>
+<li>Une fois l&rsquo;installation terminée, Dans les notifications du Gestionnaire, cliquer sur <strong>promouvoir ce serveur en contrôleur de domaine</strong></li>
+</ul>
+<p><img src="images/ADDS_promo_domain.png" alt="Promotion Contrôleur de domaine"></p>
+<p>Nous allons maintenant configurer les services Actives Directory
+Le Domaine sera le domaine racine de l&rsquo;entreprise</p>
+<ul>
+<li>Cocher <strong>Ajouter une nouvelle forêt</strong></li>
+<li>Dans <strong>Nom de Domaine racine</strong>, recopier le suffixe DNS de l&rsquo;ordinateur inscrit dans la partie 1</li>
+</ul>
+<p><img src="images/ADDS_conf_deploy1.png" alt="Deploiement ADDS"></p>
+<ul>
+<li>Dans l&rsquo;étape suivante, mettre un mot de passe fort (cf recommandations ANSSi).</li>
+<li>Le reste est à laissé en l&rsquo;etat, passer directement à la <strong>Vérification de configuration</strong>.</li>
+<li>A cette étape, il ne devrait n&rsquo;y avoir que des alertes non bloquantes.</li>
+<li>Cliquer sur <strong>Installer</strong></li>
+<li>le redémarrage du serveur est appliqué à la fin de l&rsquo;installation</li>
+</ul>
+<p>Après quelques minutes de paramétrage, l&rsquo;écran de connextion affichera désormais le nom NetBIOS du domaine et le compte Administrateur.</p>
+<p>Le compte <strong>administrateur local</strong> de la machine est automatiquement devenu le compte administrateur du domaine</p>
+<div class="alert alert-success">
+    <strong><p>NB:  Pour ce connecter à un domaine il faut saisir soit:</p>
+<ul>
+<li>DOMAINE\Utilisateur</li>
+<li><a href="mailto:utilisateur@domaine.extension">utilisateur@domaine.extension</a></li>
+</ul>
+</strong>
+</div>
+
+
+        </div>
+
+        
+        <div class="row pl-3 pr-3">
+        
+        <div class="col-md-6 share-buttons">
+        
+            <strong>Partager sur:</strong>
+            
+            
+            
+            
+            
+            
+            
+             
+            
+            
+          
+          </div>
+
+        
+        
+          
+            
+          
+          <div class="col-md-6 btn-improve-page">
+             
+               <a href="https://github.com/sebastienct/portfolio-sisr/edit/main/content/posts/Articles/Windows/Active-Directory/Installation/Active%20Directory%20Domain%20Service/index.fr.md" title="Améliorez cette page" target="_blank" rel="noopener">
+            
+                <i class="fas fa-code-branch"></i>
+                Améliorez cette page
+              </a>
+          </div>
+        
+        </div>
+
+
+
+      
+      <hr />
+        
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+    
+    
+  
+  
+
+  
+  
+
+  
+  
+
+
+<div class="row next-prev-navigator">
+  
+    <div class="col-md-6 previous-article">
+      <a href="/portfolio-sisr/posts/articles/windows/active-directory/gpo/password-policy/" title="Création d&#39;une Politique de mot de passe" class="btn btn-outline-info">
+        <div><i class="fas fa-chevron-circle-left"></i> Précédent</div>
+        <div class="next-prev-text">Création d&#39;une Politique de mot de passe</div>
+      </a>
+    </div>
+  
+  
+      
+      
+        
+      
+      <div class="col-md-6 next-article">
+        <a href="/portfolio-sisr/posts/articles/zabbix/agent/linux/" title="Installation de l&#39;agent sur un poste Linux" class="btn btn-outline-info">
+          <div>Suivant <i class="fas fa-chevron-circle-right"></i></div>
+          <div class="next-prev-text">Installation de l&#39;agent sur un poste Linux</div>
+        </a>
+      </div>
+    
+</div>
+
+      <hr />
+
+      
+      
+      
+      
+
+      </div>
+    </div>
+  </div>
+  
+  <a id="scroll-to-top" class="btn"><i class="fas fa-chevron-circle-up"></i></a>
+  
+</section>
+
+
+      
+      
+  <section class="toc-section" id="toc-section">
+    
+    <div class="toc-holder">
+      <h5 class="text-center pl-3">Table des matières</h5>
+      <hr>
+      <div class="toc">
+        <nav id="TableOfContents"></nav>
+      </div>
+    </div>
+    
+  </section>
+
+    </div>
+
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+
+  
+  
+    
+    
+      
+    
+  
+
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+
+  
+  
+  
+    
+  
+  
+
+  
+  
+  
+
+  <footer id="footer" class="container-fluid text-center align-content-center footer pb-2">
+    <div class="container pt-5">
+      <div class="row text-left">
+        
+        <div class="col-md-4 col-sm-12">
+          <h5>Navigation</h5>
+          
+          <ul>
+              
+                
+                
+                  
+                
+                <li class="nav-item">
+                  <a class="smooth-scroll" href="https://sebastienct.github.io/portfolio-sisr/#about">A propos</a>
+                </li>
+              
+              
+                
+                
+                  
+                
+                <li class="nav-item">
+                  <a class="smooth-scroll" href="https://sebastienct.github.io/portfolio-sisr/#skills">Compétences</a>
+                </li>
+              
+              
+                
+                
+                  
+                
+                <li class="nav-item">
+                  <a class="smooth-scroll" href="https://sebastienct.github.io/portfolio-sisr/#experiences">Experiences</a>
+                </li>
+              
+              
+              
+                
+                
+                  
+                
+                <li class="nav-item">
+                  <a class="smooth-scroll" href="https://sebastienct.github.io/portfolio-sisr/#projects">Entreprises</a>
+                </li>
+              
+              
+              
+                
+                
+                  
+                
+                <li class="nav-item">
+                  <a class="smooth-scroll" href="https://sebastienct.github.io/portfolio-sisr/#accomplishments">Formations</a>
+                </li>
+              
+              
+                
+                
+                  
+                
+                <li class="nav-item">
+                  <a class="smooth-scroll" href="https://sebastienct.github.io/portfolio-sisr/#recent-posts">Procédures BTS</a>
+                </li>
+              
+            
+              
+            
+          </ul>
+          
+        </div>
+        
+        
+        
+        
+          
+          <div class="col-md-4 col-sm-12">
+            <p>Restez à jour par e-mail</p>
+            
+              <form method='post' action='https://blogtrottr.com'>
+              <div class="form-group">
+              <input type='email' class="form-control" name='btr_email' placeholder="Entrez une adresse e-mail"/><br />
+              <input type='hidden' name='btr_url' value='https://sebastienct.github.io/portfolio-sisr/index.xml' />
+              <input type='hidden' name='schedule_type' value='1' />
+              <small id="emailHelp" class="form-text text-muted">En renseignant votre adresse e-mail, vous acceptez de recevoir la newsletter de ce site.</small>
+              <button type="submit" class="btn btn-info"> Envoyer </button>
+              </div>
+              </form>
+            
+          </div>
+        
+      </div>
+    </div>
+    
+    <hr />
+    <div class="container">
+      <p id="disclaimer"><strong>Avis de responsabilité:</strong> Le contenu du site est sous l&rsquo;unique propriété de son auteur. Hébergé sur Github.com, Framework Hugo, Theme, hugo-Toha</p>
+    </div>
+    
+    
+    <hr />
+    <div class="container">
+      <div class="row text-left">
+        <div class="col-md-4">
+          <a id="theme" href="https://github.com/hossainemruz/toha" target="_blank" rel="noopener">
+            <img src="/portfolio-sisr/images/theme-logo_hu8376fd15465fef26ffe66b6bcf0ca686_13669_32x0_resize_box_3.png" alt="Toha Theme Logo">
+            Toha
+          </a>
+        </div>
+        <div class="col-md-4 text-center">© 2022 MIT.</div>
+        <div class="col-md-4 text-right">
+          <a id="hugo" href="https://gohugo.io/" target="_blank" rel="noopener">Alimenté par
+          <img
+            src="/portfolio-sisr/images/hugo-logo.svg"
+            alt="Hugo Logo"
+            height="18"
+          />
+          </a>
+        </div>
+      </div>
+    </div>
+    
+  </footer>
+
+
+    <script type="text/javascript" src="/portfolio-sisr/js/jquery-3.4.1.min.js"></script>
+<script type="text/javascript" src="/portfolio-sisr/js/popper.min.js"></script>
+<script type="text/javascript" src="/portfolio-sisr/js/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="/portfolio-sisr/js/navbar.js"></script>
+<script type="text/javascript" src="/portfolio-sisr/js/plyr.js"></script>
+<script type="text/javascript" src="/portfolio-sisr/js/main.js"></script>
+
+
+    
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/highlight.min.js"></script>
+<script src="/portfolio-sisr/js/single.js"></script>
+<script>
+  hljs.initHighlightingOnLoad();
+</script>
+
+
+
+
+
+
+
+
+
+    
+</body>
+</html>
