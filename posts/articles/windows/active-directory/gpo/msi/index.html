@@ -550,34 +550,33 @@
         </div>
         
         <div class="post-content" id="post-content">
-          <p>Cette procédure à pour but d&rsquo;installer par GPO, un programme avec l&rsquo;extension .MSI, sur l&rsquo;ensemble des postes d&rsquo;un domaine, d&rsquo;une OU</p>
-<p>Cette procédure décriera les étapes pour installer Firefox ESR</p>
+          <p>Cette procédure à pour but d&rsquo;installer par GPO, un programme avec l&rsquo;extension .MSI, sur l&rsquo;ensemble des postes d&rsquo;un domaine, d&rsquo;une OU.</p>
+<p>Cette procédure décriera les étapes pour installer Firefox ESR.</p>
 <h2 id="préparation">Préparation</h2>
 <h3 id="création-dun-dossier-partagé">Création d&rsquo;un dossier Partagé</h3>
 <ul>
-<li>Créer sur le serveur un dossier partagé</li>
-<li>Ajouter les droits de lectures aux ordinateurs du domaine</li>
+<li>Créer sur le serveur un dossier partagé.</li>
+<li>Ajouter les droits de lectures aux ordinateurs du domaine.</li>
 </ul>
 <h3 id="récupération-de-linstallateur">Récupération de l&rsquo;installateur</h3>
 <ul>
-<li>Récupérer sur le site de l&rsquo;éditeur, l&rsquo;installateur au format MSI</li>
-<li>copier l&rsquo;installateur dans le dossier partagé</li>
+<li>Récupérer sur le site de l&rsquo;éditeur, l&rsquo;installateur au format MSI.</li>
+<li>copier l&rsquo;installateur dans le dossier partagé.</li>
 </ul>
 <h2 id="création-de-la-gpo">Création de la GPO</h2>
-<p>Dans la fenêtre &ldquo;Group Policy Management&rdquo;
-créer une nouvelle GPO nommée &ldquo;InstallPackage&rdquo;</p>
-<p>Faire ensuite un clic-droit sur la GPO puis sélectionner &ldquo;Edit&rdquo;
-dérouler l&rsquo;arborescence:</p>
+<p>Dans la fenêtre &ldquo;Group Policy Management&rdquo;, créer une nouvelle GPO nommée &ldquo;InstallPackage&rdquo;.</p>
+<p>Faire ensuite un clic-droit sur la GPO puis sélectionner &ldquo;Edit&rdquo;.
+Dérouler l&rsquo;arborescence:</p>
 <pre tabindex="0"><code class="language-tree" data-lang="tree">|--Computer Configuration
   |--Policies
     |-- Software Settings
       |-- Software Installation
-</code></pre><p>faire un clic droit sur &ldquo;Software Installation&rdquo;</p>
+</code></pre><p>Faire un clic droit sur &ldquo;Software Installation&rdquo;.</p>
 <pre tabindex="0"><code class="language-tree" data-lang="tree">clic droit
   &gt; new
     &gt; Package
-</code></pre><p>Sélectionner l&rsquo;installateur et choisir la méthode &ldquo;Assigned&rdquo;</p>
-<p>Dans les filtres de sécurité, choisir: Utilisateur authentifié</p>
+</code></pre><p>Sélectionner l&rsquo;installateur et choisir la méthode &ldquo;Assigned&rdquo;.</p>
+<p>Dans les filtres de sécurité, choisir: Utilisateur authentifié.</p>
 <p><img src="/posts/Windows/Active-Directory/GPO/MSI/images/GpoInstallPackage.jpg"
     
         alt="GroupPolicyManagement"
@@ -594,8 +593,8 @@ dérouler l&rsquo;arborescence:</p>
 <h2 id="postes-clients">Postes Clients</h2>
 <p>Sur chaque poste clients connectés à l&rsquo;Active Directory il faut soit:</p>
 <ol>
-<li>attendre le redémarrage de la machine</li>
-<li>faire la commande:
+<li>Attendre le redémarrage de la machine</li>
+<li>Faire la commande:
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-console" data-lang="console"><span style="display:flex;"><span>gpudate /force
 </span></span></code></pre></div>puis redémarrer la machine</li>
 </ol>

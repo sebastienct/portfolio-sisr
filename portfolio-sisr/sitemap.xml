@@ -100,6 +100,18 @@
     <lastmod>2010-06-08T08:06:25+06:00</lastmod>
     <priority>0.1</priority>
   </url><url>
+    <loc>https://sebastienct.github.io/portfolio-sisr/posts/</loc>
+    <lastmod>2022-05-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://sebastienct.github.io/portfolio-sisr/</loc>
+    <lastmod>2022-05-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://sebastienct.github.io/portfolio-sisr/posts/articles/</loc>
+    <lastmod>2022-05-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://sebastienct.github.io/portfolio-sisr/posts/articles/virtualbox/</loc>
+    <lastmod>2022-05-01T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://sebastienct.github.io/portfolio-sisr/posts/articles/zabbix/agent/</loc>
     <lastmod>2022-02-27T00:00:00+00:00</lastmod>
   </url><url>
@@ -124,15 +136,6 @@
     <loc>https://sebastienct.github.io/portfolio-sisr/tags/linux/</loc>
     <lastmod>2022-02-27T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://sebastienct.github.io/portfolio-sisr/posts/</loc>
-    <lastmod>2022-02-27T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://sebastienct.github.io/portfolio-sisr/</loc>
-    <lastmod>2022-02-27T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://sebastienct.github.io/portfolio-sisr/posts/articles/</loc>
-    <lastmod>2022-02-27T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://sebastienct.github.io/portfolio-sisr/posts/articles/zabbix/serveur/</loc>
     <lastmod>2022-02-27T00:00:00+00:00</lastmod>
   </url><url>
@@ -144,6 +147,24 @@
   </url><url>
     <loc>https://sebastienct.github.io/portfolio-sisr/posts/articles/zabbix/</loc>
     <lastmod>2022-02-27T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://sebastienct.github.io/portfolio-sisr/posts/formation/publications/cultg%C3%A9/</loc>
+    <lastmod>2022-02-08T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://sebastienct.github.io/portfolio-sisr/posts/formation/</loc>
+    <lastmod>2022-02-08T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://sebastienct.github.io/portfolio-sisr/posts/formation/publications/</loc>
+    <lastmod>2022-02-08T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://sebastienct.github.io/portfolio-sisr/posts/formation/publications/anglais/</loc>
+    <lastmod>2022-01-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://sebastienct.github.io/portfolio-sisr/posts/articles/pfsense/ha/</loc>
+    <lastmod>2022-01-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://sebastienct.github.io/portfolio-sisr/posts/articles/pfsense/</loc>
+    <lastmod>2022-01-02T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://sebastienct.github.io/portfolio-sisr/tags/3r/</loc>
     <lastmod>2021-12-19T00:00:00+00:00</lastmod>
@@ -208,10 +229,11 @@
     <loc>https://sebastienct.github.io/portfolio-sisr/posts/articles/windows/</loc>
     <lastmod>2021-10-24T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>https://sebastienct.github.io/portfolio-sisr/posts/articles/pfsense/installation/</loc>
+    <lastmod>2021-08-30T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://sebastienct.github.io/portfolio-sisr/notes/</loc>
     <lastmod>2010-06-08T08:06:25+06:00</lastmod>
-  </url><url>
-    <loc>https://sebastienct.github.io/portfolio-sisr/posts/formation/publications/anglais/</loc>
   </url><url>
     <loc>https://sebastienct.github.io/portfolio-sisr/notes/ansible/</loc>
   </url><url>
@@ -223,22 +245,8 @@
   </url><url>
     <loc>https://sebastienct.github.io/portfolio-sisr/posts/articles/pfsense/configuration/</loc>
   </url><url>
-    <loc>https://sebastienct.github.io/portfolio-sisr/posts/formation/publications/cultg%C3%A9/</loc>
-  </url><url>
-    <loc>https://sebastienct.github.io/portfolio-sisr/posts/formation/</loc>
-  </url><url>
     <loc>https://sebastienct.github.io/portfolio-sisr/notes/ansible/general/items/</loc>
   </url><url>
-    <loc>https://sebastienct.github.io/portfolio-sisr/posts/articles/pfsense/ha/</loc>
-  </url><url>
-    <loc>https://sebastienct.github.io/portfolio-sisr/posts/articles/pfsense/installation/</loc>
-  </url><url>
-    <loc>https://sebastienct.github.io/portfolio-sisr/posts/articles/pfsense/</loc>
-  </url><url>
-    <loc>https://sebastienct.github.io/portfolio-sisr/posts/formation/publications/</loc>
-  </url><url>
     <loc>https://sebastienct.github.io/portfolio-sisr/posts/formation/publications/veille/</loc>
-  </url><url>
-    <loc>https://sebastienct.github.io/portfolio-sisr/posts/articles/virtualbox/</loc>
   </url>
 </urlset>

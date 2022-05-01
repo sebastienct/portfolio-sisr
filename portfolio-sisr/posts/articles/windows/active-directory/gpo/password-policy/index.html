@@ -556,31 +556,35 @@
           <p>Afin de garantir une bonne sécurité de notre infrastructure. Il est recommandé par l’ANSSI de respecter quelques règles dans la politique d’élaboration des mots de passe.
 Pour rappel un mot de passe fort  :</p>
 <ul>
-<li>est unique et non réutilisable pour une autre utilité</li>
-<li>ne possède pas de lien avec la personne</li>
-<li>est composé de 12 caractères MINIMUM</li>
-<li>est composé de caractères Alphanumérique et de caractère spéciaux</li>
-<li>est renouvelé régulièrement, 90 jours est un bon compromis</li>
+<li>Est unique et non réutilisable pour une autre utilité ;</li>
+<li>Ne possède pas de lien avec la personne ;</li>
+<li>Est composé de 12 caractères MINIMUM ;</li>
+<li>Est composé de caractères Alphanumérique et de caractère spéciaux ;</li>
+<li>Est renouvelé régulièrement, 90 jours est un bon compromis.</li>
 </ul>
-<p>Pour plus de détail visité l&rsquo;ANSSi et plus particulièrement la recommandation</p>
+<p>Pour plus de détail visité l&rsquo;ANSSi et plus particulièrement la recommandation <a href="https://www.ssi.gouv.fr/guide/recommandations-relatives-a-lauthentification-multifacteur-et-aux-mots-de-passe/">recommendations relatives à l&rsquo;authentification multifacteur et aux mots de passe</a>.</p>
 <ul>
-<li>Ajouter les droits de lectures aux ordinateurs du domaine</li>
+<li>Ajouter les droits de lectures aux ordinateurs du domaine.
+<div class="alert alert-success">
+    <strong>NB:  Ajouter les droits de lectures aux ordinateurs du domaine.</strong>
+</div>
+</li>
 </ul>
 <h3 id="récupération-de-linstallateur">Récupération de l&rsquo;installateur</h3>
 <ul>
-<li>Récupérer sur le site de l&rsquo;éditeur, l&rsquo;installateur au format MSI</li>
-<li>copier l&rsquo;installateur dans le dossier partagé</li>
+<li>Récupérer sur le site de l&rsquo;éditeur, l&rsquo;installateur au format MSI.</li>
+<li>copier l&rsquo;installateur dans le dossier partagé.</li>
 </ul>
 <h2 id="création-de-la-gpo">Création de la GPO</h2>
 <p>Dans la fenêtre &ldquo;Group Policy Management&rdquo;
-créer une nouvelle GPO nommée &ldquo;InstallPackage&rdquo;</p>
-<p>Faire ensuite un clic-droit sur la GPO puis sélectionner &ldquo;Edit&rdquo;
-dérouler l&rsquo;arborescence:</p>
+Créer une nouvelle GPO nommée &ldquo;InstallPackage&rdquo;</p>
+<p>Faire ensuite un clic-droit sur la GPO puis sélectionner &ldquo;Edit&rdquo;.
+Dérouler l&rsquo;arborescence:</p>
 <pre tabindex="0"><code class="language-tree" data-lang="tree">|--Computer Configuration
   |--Policies
     |-- Software Settings
       |-- Software Installation
-</code></pre><p>faire un clic droit sur &ldquo;Software Installation&rdquo;</p>
+</code></pre><p>faire un clic droit sur &ldquo;Software Installation&rdquo;.</p>
 <pre tabindex="0"><code class="language-tree" data-lang="tree">clic droit
   &gt; new
     &gt; Package
@@ -867,7 +871,6 @@ dérouler l&rsquo;arborescence:</p>
                 </li>
               
               
-              
                 
                 
                   
@@ -875,6 +878,7 @@ dérouler l&rsquo;arborescence:</p>
                 <li class="nav-item">
                   <a class="smooth-scroll" href="https://sebastienct.github.io/portfolio-sisr/#projects">Entreprises</a>
                 </li>
+              
               
               
               

@@ -13,7 +13,7 @@
       
       <guid>https://sebastienct.github.io/portfolio-sisr/posts/articles/windows/active-directory/gpo/password-policy/</guid>
       <description>Afin de garantir une bonne sécurité de notre infrastructure. Il est recommandé par l’ANSSI de respecter quelques règles dans la politique d’élaboration des mots de passe. Pour rappel un mot de passe fort :
- est unique et non réutilisable pour une autre utilité ne possède pas de lien avec la personne est composé de 12 caractères MINIMUM est composé de caractères Alphanumérique et de caractère spéciaux est renouvelé régulièrement, 90 jours est un bon compromis  Pour plus de détail visité l&amp;rsquo;ANSSi et plus particulièrement la recommandation</description>
+ Est unique et non réutilisable pour une autre utilité ; Ne possède pas de lien avec la personne ; Est composé de 12 caractères MINIMUM ; Est composé de caractères Alphanumérique et de caractère spéciaux ; Est renouvelé régulièrement, 90 jours est un bon compromis.</description>
     </item>
     
     

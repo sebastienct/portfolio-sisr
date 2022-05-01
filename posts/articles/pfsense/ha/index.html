@@ -34,14 +34,14 @@
   <link rel="icon" type="image/png" href="/portfolio-sisr/images/site/favicon_hued48f37b2456016ed097988ee7438af3_5560_42x0_resize_box_3.png" />
 
 <meta property="og:title" content="HA" />
-<meta property="og:description" content="Configuration d&rsquo;un HA(CARP) avec PFsense Cette methode doit s&rsquo;appliquer sur les deux pare-feu entrant dans le projet de synchronisation et la haute disponibilité.
+<meta property="og:description" content="Configuration d&rsquo;un HA(CARP) avec PFsense Cette méthode doit s&rsquo;appliquer sur les deux pare-feu entrant dans le projet de synchronisation et la haute disponibilité.
 Création d&rsquo;une interface dédiée ( non obligatoire ) Créer et configurer une interface dédiée pour relier les 2 pare-feu PFsense.
-Configuration des IP Pour créer le CARP, il faut 3 IP dédiées dans chaque réseaux pour les pare-feu
+Configuration des IP Pour créer le CARP, il faut 3 IP dédiées dans chaque réseaux pour les pare-feu.
 Ouvrir le menu Firewall / Virtual IPs Pour chaque réseau:" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://sebastienct.github.io/portfolio-sisr/posts/articles/pfsense/ha/" /><meta property="article:section" content="posts" />
-
-
+<meta property="article:published_time" content="2022-01-02T00:00:00+00:00" />
+<meta property="article:modified_time" content="2022-01-02T00:00:00+00:00" />
 
 
 
@@ -516,7 +516,7 @@ Ouvrir le menu Firewall / Virtual IPs Pour chaque réseau:" />
   <div class="content">
     <div class="container p-0 read-area">
       
-      <div class="hero-area col-sm-12" id="hero-area" style='background-image: url(https://sebastienct.github.io/portfolio-sisr/portfolio-sisr/images/default-hero.jpg);'>
+      <div class="hero-area col-sm-12" id="hero-area" style='background-image: url(https://sebastienct.github.io/portfolio-sisr/portfolio-sisr/posts/articles/pfsense/ha/images/PfSense_logo.png);'>
       </div>
 
       
@@ -524,7 +524,7 @@ Ouvrir le menu Firewall / Virtual IPs Pour chaque réseau:" />
         <div class="author-profile ml-auto align-self-lg-center">
           <img class="rounded-circle" src='/portfolio-sisr/images/author/avatar2_hu4b7385ef6960c87033360a63bdd61944_190262_120x120_fit_box_3.png' alt="Author Image">
           <h5 class="author-name">Sébastien C</h5>
-          <p>lundi 1 janvier 1</p>
+          <p>dimanche 2 janvier 2022</p>
         </div>
 
         <div class="title">
@@ -539,11 +539,11 @@ Ouvrir le menu Firewall / Virtual IPs Pour chaque réseau:" />
         
         <div class="post-content" id="post-content">
           <h2 id="configuration-dun-hacarp-avec-pfsense">Configuration d&rsquo;un HA(CARP) avec PFsense</h2>
-<p>Cette methode doit s&rsquo;appliquer sur les deux pare-feu entrant dans le projet de synchronisation et la haute disponibilité.</p>
+<p>Cette méthode doit s&rsquo;appliquer sur les deux pare-feu entrant dans le projet de synchronisation et la haute disponibilité.</p>
 <h3 id="création-dune-interface-dédiée--non-obligatoire-">Création d&rsquo;une interface dédiée ( non obligatoire )</h3>
 <p>Créer et configurer une interface dédiée pour relier les 2 pare-feu PFsense.</p>
 <h3 id="configuration-des-ip">Configuration des IP</h3>
-<p>Pour créer le CARP, il faut 3 IP dédiées dans chaque réseaux pour les pare-feu</p>
+<p>Pour créer le CARP, il faut 3 IP dédiées dans chaque réseaux pour les pare-feu.</p>
 <p>Ouvrir le menu Firewall / Virtual IPs
 Pour chaque réseau:</p>
 <ul>
@@ -553,17 +553,17 @@ Pour chaque réseau:</p>
 <li>Type: CARP</li>
 <li>Interface: WAN,LAN,ETC</li>
 <li>Adresses:  une IP correspondant au réseau. Par convention choisir la dernière du réseau</li>
-<li>VirtualIp Password: mot de passe partagé entre les 2 parefeu</li>
-<li>VHID Group:  choisir un numero unique par groupe de réseau</li>
+<li>VirtualIp Password: mot de passe partagé entre les 2 pare-feu</li>
+<li>VHID Group:  choisir un numéro unique par groupe de réseau</li>
 <li>Advertising Frequency: 1</li>
 <li>Skew: 100</li>
 <li>Description: optionnel
-Appliquer les changements</li>
+Appliquer les changements.</li>
 </ul>
 </li>
 </ul>
 <h3 id="configuration-de-la-nat">Configuration de la NAT</h3>
-<p>Pour chaque réseau créer il faut configurer la NAT de sortie. il faut donner l&rsquo;adresse IP virtuelle de l&rsquo;interface WAN
+<p>Pour chaque réseau créer il faut configurer la NAT de sortie. il faut donner l&rsquo;adresse IP virtuelle de l&rsquo;interface WAN.
 pour cela, se rendre dans dans:
 Firewall / NAT / Outbound
 cliquer sur &quot; + ADD&quot;
@@ -579,22 +579,22 @@ puis ajouter les paramètres:</p>
 <h3 id="modification-des-configurations-générales">Modification des configurations générales</h3>
 <p>En cas de modification d&rsquo;un pare-feu deja configurer, il faut penser à aller à faire la modification:</p>
 <ul>
-<li>des gateway dans les DHCP</li>
-<li>des serveurs OpenVPN</li>
+<li>Des gateway dans les DHCP.</li>
+<li>Des serveurs OpenVPN.</li>
 </ul>
 <h3 id="configuration-de-la-haute-disponibilité">Configuration de la Haute disponibilité</h3>
-<p>Aller dans System / High Avail. Sync
-Pour chaque étapes, ajouter les paramètres nécessaires</p>
+<p>Aller dans System / High Avail. Sync.
+Pour chaque étapes, ajouter les paramètres nécessaires.</p>
 <h4 id="state-synchronization-settings-pfsync">State Synchronization Settings (pfsync)</h4>
 <ul>
 <li>Synchronize States : [ X ]</li>
-<li>Synchronize Interface: choisir l&rsquo;interface créée sécialement pour la HA.</li>
+<li>Synchronize Interface: choisir l&rsquo;interface créée spécialement pour la HA.</li>
 <li>pfsync Synchronize Peer IP :  l&rsquo;IP choisie pour le PFsense 2</li>
 </ul>
 <h4 id="configuration-synchronization-settings-xmlrpc">Configuration Synchronization Settings (XMLRPC)</h4>
 <ul>
-<li>Synchronize Config IP: IP du pfsense 2</li>
-<li>Remote system username: Utilisateur ayant les droits nécéssaire.</li>
+<li>Synchronize Config IP: IP du pfsense 2.</li>
+<li>Remote system username: Utilisateur ayant les droits nécessaire.</li>
 <li>Remote System Password: mot de passe utilisateur.</li>
 <li>Select Option to sync: selon configuration du pfsense.</li>
 </ul>
@@ -603,7 +603,6 @@ Pour chaque étapes, ajouter les paramètres nécessaires</p>
 l&rsquo;alias doit contenir les 2 Ip des pare-feu entrant dans la synchronisation.</p>
 <p>Ajouter des règles de filtrage dans l&rsquo;interface réservée pour le HA.
 Pour cela, aller dans Firewall /Rules /&ldquo;Interface HA&rdquo;.</p>
-<p><strong>PHOTO</strong></p>
 <h3 id="vérification-de-la-configuration">Vérification de la configuration</h3>
 <p>Aller dans Status / CARP sur le pare-feu principal. Si les status sont à &ldquo;MASTER&rdquo; alors la configuration est appliquée.</p>
 
@@ -875,7 +874,6 @@ Pour cela, aller dans Firewall /Rules /&ldquo;Interface HA&rdquo;.</p>
                 </li>
               
               
-              
                 
                 
                   
@@ -883,6 +881,7 @@ Pour cela, aller dans Firewall /Rules /&ldquo;Interface HA&rdquo;.</p>
                 <li class="nav-item">
                   <a class="smooth-scroll" href="https://sebastienct.github.io/portfolio-sisr/#projects">Entreprises</a>
                 </li>
+              
               
               
               

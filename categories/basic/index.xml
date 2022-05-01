@@ -52,7 +52,7 @@ Dans la fenêtre qui s&amp;rsquo;ouvre, cliquer sur modifier, Attribuer un nom �
       
       <guid>https://sebastienct.github.io/portfolio-sisr/posts/articles/windows/active-directory/gpo/password-policy/</guid>
       <description>Afin de garantir une bonne sécurité de notre infrastructure. Il est recommandé par l’ANSSI de respecter quelques règles dans la politique d’élaboration des mots de passe. Pour rappel un mot de passe fort :
- est unique et non réutilisable pour une autre utilité ne possède pas de lien avec la personne est composé de 12 caractères MINIMUM est composé de caractères Alphanumérique et de caractère spéciaux est renouvelé régulièrement, 90 jours est un bon compromis  Pour plus de détail visité l&amp;rsquo;ANSSi et plus particulièrement la recommandation</description>
+ Est unique et non réutilisable pour une autre utilité ; Ne possède pas de lien avec la personne ; Est composé de 12 caractères MINIMUM ; Est composé de caractères Alphanumérique et de caractère spéciaux ; Est renouvelé régulièrement, 90 jours est un bon compromis.</description>
     </item>
     
     <item>
@@ -61,9 +61,9 @@ Dans la fenêtre qui s&amp;rsquo;ouvre, cliquer sur modifier, Attribuer un nom �
       <pubDate>Sun, 24 Oct 2021 00:00:00 +0000</pubDate>
       
       <guid>https://sebastienct.github.io/portfolio-sisr/posts/articles/windows/active-directory/gpo/msi/</guid>
-      <description>Cette procédure à pour but d&amp;rsquo;installer par GPO, un programme avec l&amp;rsquo;extension .MSI, sur l&amp;rsquo;ensemble des postes d&amp;rsquo;un domaine, d&amp;rsquo;une OU
-Cette procédure décriera les étapes pour installer Firefox ESR
-Préparation Création d&amp;rsquo;un dossier Partagé  Créer sur le serveur un dossier partagé Ajouter les droits de lectures aux ordinateurs du domaine  Récupération de l&amp;rsquo;installateur  Récupérer sur le site de l&amp;rsquo;éditeur, l&amp;rsquo;installateur au format MSI copier l&amp;rsquo;installateur dans le dossier partagé  Création de la GPO Dans la fenêtre &amp;ldquo;Group Policy Management&amp;rdquo; créer une nouvelle GPO nommée &amp;ldquo;InstallPackage&amp;rdquo;</description>
+      <description>Cette procédure à pour but d&amp;rsquo;installer par GPO, un programme avec l&amp;rsquo;extension .MSI, sur l&amp;rsquo;ensemble des postes d&amp;rsquo;un domaine, d&amp;rsquo;une OU.
+Cette procédure décriera les étapes pour installer Firefox ESR.
+Préparation Création d&amp;rsquo;un dossier Partagé  Créer sur le serveur un dossier partagé. Ajouter les droits de lectures aux ordinateurs du domaine.  Récupération de l&amp;rsquo;installateur  Récupérer sur le site de l&amp;rsquo;éditeur, l&amp;rsquo;installateur au format MSI. copier l&amp;rsquo;installateur dans le dossier partagé.</description>
     </item>
     
     

@@ -6,7 +6,7 @@
     <description>Recent content on Portfolio SIO SISR de Sébastien C</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>fr-fr</language>
-    <lastBuildDate>Sun, 27 Feb 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://sebastienct.github.io/portfolio-sisr/index.xml" rel="self" type="application/rss+xml" /><item>
+    <lastBuildDate>Sun, 01 May 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://sebastienct.github.io/portfolio-sisr/index.xml" rel="self" type="application/rss+xml" /><item>
       <title>Installation</title>
       <link>https://sebastienct.github.io/portfolio-sisr/notes/ansible/general/install/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -330,6 +330,15 @@ Initial setup Search depends on additional output content type of JSON in config
     </item>
     
     <item>
+      <title>Virtualbox</title>
+      <link>https://sebastienct.github.io/portfolio-sisr/posts/articles/virtualbox/</link>
+      <pubDate>Sun, 01 May 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://sebastienct.github.io/portfolio-sisr/posts/articles/virtualbox/</guid>
+      <description>Ajout d&amp;rsquo;une interface réseau interne en ligne de commande VBoxManage modifyvm nom_de_la_vm --nic6 intnet VBoxManage modifyvm nom_de_la_vm --intnet6 &amp;#34;nom_interface&amp;#34; Eteindre une VM # extinction VBoxManage controlvm &amp;#34;nom de la vm&amp;#34; poweroff Copier un document vers une VM VBoxManage guestcontrol &amp;#39;nom de la vm&amp;#39; copyto &amp;#39;fichier&amp;#39; dossier_distant --username &amp;#34;utilisateur&amp;#34; --password &amp;#34;mot de passe&amp;#34; </description>
+    </item>
+    
+    <item>
       <title>Ajout d&#39;un agent dans le Dashboard</title>
       <link>https://sebastienct.github.io/portfolio-sisr/posts/articles/zabbix/serveur/hote/agent/</link>
       <pubDate>Sun, 27 Feb 2022 00:00:00 +0000</pubDate>
@@ -357,6 +366,39 @@ sudo systemctl restart zabbix-agent.service </description>
     </item>
     
     <item>
+      <title>Culture Générale</title>
+      <link>https://sebastienct.github.io/portfolio-sisr/posts/formation/publications/cultg%C3%A9/</link>
+      <pubDate>Tue, 08 Feb 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://sebastienct.github.io/portfolio-sisr/posts/formation/publications/cultg%C3%A9/</guid>
+      <description>Dans cette section, vous trouverez les différentes présentations faites en Culture Générale pendant ma formation en SIO SISR
+L&amp;rsquo;éco-responsabilité: Du papier au clavier 
+Maisons du monde: Peut-on se sentir chez soi dans n&amp;rsquo;importe quelle maison?</description>
+    </item>
+    
+    <item>
+      <title>Anglais</title>
+      <link>https://sebastienct.github.io/portfolio-sisr/posts/formation/publications/anglais/</link>
+      <pubDate>Tue, 11 Jan 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://sebastienct.github.io/portfolio-sisr/posts/formation/publications/anglais/</guid>
+      <description>Dans cette section, vous trouverez les différentes présentations faites en cours d&amp;rsquo;anglais pendant ma formation en SIO SISR.
+Richard Stallman and Linus Torvalds Ce travail à été réalisé en binôme.</description>
+    </item>
+    
+    <item>
+      <title>HA</title>
+      <link>https://sebastienct.github.io/portfolio-sisr/posts/articles/pfsense/ha/</link>
+      <pubDate>Sun, 02 Jan 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://sebastienct.github.io/portfolio-sisr/posts/articles/pfsense/ha/</guid>
+      <description>Configuration d&amp;rsquo;un HA(CARP) avec PFsense Cette méthode doit s&amp;rsquo;appliquer sur les deux pare-feu entrant dans le projet de synchronisation et la haute disponibilité.
+Création d&amp;rsquo;une interface dédiée ( non obligatoire ) Créer et configurer une interface dédiée pour relier les 2 pare-feu PFsense.
+Configuration des IP Pour créer le CARP, il faut 3 IP dédiées dans chaque réseaux pour les pare-feu.
+Ouvrir le menu Firewall / Virtual IPs Pour chaque réseau:</description>
+    </item>
+    
+    <item>
       <title>3R Réseaux</title>
       <link>https://sebastienct.github.io/portfolio-sisr/posts/entreprise/groupe3/3r/</link>
       <pubDate>Sun, 19 Dec 2021 00:00:00 +0000</pubDate>
@@ -364,7 +406,7 @@ sudo systemctl restart zabbix-agent.service </description>
       <guid>https://sebastienct.github.io/portfolio-sisr/posts/entreprise/groupe3/3r/</guid>
       <description>Présentation 3R Réseaux est une SASU spécialisée dans le domaine du conseil, du diagnostic et de l&amp;rsquo;installation des infrastructures de communication.
 Elle est forte de 20 ans d&amp;rsquo;expérience dans le domaine du câblage réseaux.
-Elle apporte son expertise et ses conseils dans
+Elle apporte son expertise et ses conseils dans:
  l&amp;rsquo;audit réseaux; le câblage cuivre et fibre; la vidéosurveillance; les réseaux sans-fils; la commutation de niveau 2 et 3  </description>
     </item>
     
@@ -377,7 +419,7 @@ Elle apporte son expertise et ses conseils dans
       <description>Présentation 3S Sécurité est une SASU créée en janvier 2020 regroupant des experts de la cybersécurité.
 Missions 3S Sécurité propose des audits de sécurité à la fois techniques et organisationnels ainsi que des tests d&amp;rsquo;intrusions (en boite blanche, grise ou noire).
 Elle propose également la mise en conformité de l&amp;rsquo;infrastructure réseau, l&amp;rsquo;installation et la configuration des dispositifs physiques et logiciels de ses clients.
-3S Sécurité apporte aussi son aide a travers la formation, transfert des compétences et la sensibilisation aux risques liés a la cybersécurité.</description>
+3S Sécurité apporte aussi son aide à travers la formation, transfert des compétences et la sensibilisation aux risques liés à la cybersécurité.</description>
     </item>
     
     <item>
@@ -399,7 +441,7 @@ Dans la fenêtre qui s&amp;rsquo;ouvre, cliquer sur modifier, Attribuer un nom �
       
       <guid>https://sebastienct.github.io/portfolio-sisr/posts/articles/windows/active-directory/gpo/password-policy/</guid>
       <description>Afin de garantir une bonne sécurité de notre infrastructure. Il est recommandé par l’ANSSI de respecter quelques règles dans la politique d’élaboration des mots de passe. Pour rappel un mot de passe fort :
- est unique et non réutilisable pour une autre utilité ne possède pas de lien avec la personne est composé de 12 caractères MINIMUM est composé de caractères Alphanumérique et de caractère spéciaux est renouvelé régulièrement, 90 jours est un bon compromis  Pour plus de détail visité l&amp;rsquo;ANSSi et plus particulièrement la recommandation</description>
+ Est unique et non réutilisable pour une autre utilité ; Ne possède pas de lien avec la personne ; Est composé de 12 caractères MINIMUM ; Est composé de caractères Alphanumérique et de caractère spéciaux ; Est renouvelé régulièrement, 90 jours est un bon compromis.</description>
     </item>
     
     <item>
@@ -408,19 +450,19 @@ Dans la fenêtre qui s&amp;rsquo;ouvre, cliquer sur modifier, Attribuer un nom �
       <pubDate>Sun, 24 Oct 2021 00:00:00 +0000</pubDate>
       
       <guid>https://sebastienct.github.io/portfolio-sisr/posts/articles/windows/active-directory/gpo/msi/</guid>
-      <description>Cette procédure à pour but d&amp;rsquo;installer par GPO, un programme avec l&amp;rsquo;extension .MSI, sur l&amp;rsquo;ensemble des postes d&amp;rsquo;un domaine, d&amp;rsquo;une OU
-Cette procédure décriera les étapes pour installer Firefox ESR
-Préparation Création d&amp;rsquo;un dossier Partagé  Créer sur le serveur un dossier partagé Ajouter les droits de lectures aux ordinateurs du domaine  Récupération de l&amp;rsquo;installateur  Récupérer sur le site de l&amp;rsquo;éditeur, l&amp;rsquo;installateur au format MSI copier l&amp;rsquo;installateur dans le dossier partagé  Création de la GPO Dans la fenêtre &amp;ldquo;Group Policy Management&amp;rdquo; créer une nouvelle GPO nommée &amp;ldquo;InstallPackage&amp;rdquo;</description>
+      <description>Cette procédure à pour but d&amp;rsquo;installer par GPO, un programme avec l&amp;rsquo;extension .MSI, sur l&amp;rsquo;ensemble des postes d&amp;rsquo;un domaine, d&amp;rsquo;une OU.
+Cette procédure décriera les étapes pour installer Firefox ESR.
+Préparation Création d&amp;rsquo;un dossier Partagé  Créer sur le serveur un dossier partagé. Ajouter les droits de lectures aux ordinateurs du domaine.  Récupération de l&amp;rsquo;installateur  Récupérer sur le site de l&amp;rsquo;éditeur, l&amp;rsquo;installateur au format MSI. copier l&amp;rsquo;installateur dans le dossier partagé.</description>
     </item>
     
     <item>
-      <title>Anglais</title>
-      <link>https://sebastienct.github.io/portfolio-sisr/posts/formation/publications/anglais/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <title>Installation</title>
+      <link>https://sebastienct.github.io/portfolio-sisr/posts/articles/pfsense/installation/</link>
+      <pubDate>Mon, 30 Aug 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://sebastienct.github.io/portfolio-sisr/posts/formation/publications/anglais/</guid>
-      <description>Dans cette section, vous trouverez les différentes présentations faites en cours d&amp;rsquo;anglais pendant ma formation en SIO SISR
-Richard Stallman and Linus Torvalds</description>
+      <guid>https://sebastienct.github.io/portfolio-sisr/posts/articles/pfsense/installation/</guid>
+      <description>Installation d&amp;rsquo;un routeur/Pare_feu PfSense Ce référer au tutoriel disponible sur le lien suivant :
+Neptunet.fr</description>
     </item>
     
     <item>
@@ -444,44 +486,12 @@ Invoke-WebRequest -OutFile ansible.ps1 https://raw.githubusercontent.com/ansible
     </item>
     
     <item>
-      <title>Culture Générale</title>
-      <link>https://sebastienct.github.io/portfolio-sisr/posts/formation/publications/cultg%C3%A9/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://sebastienct.github.io/portfolio-sisr/posts/formation/publications/cultg%C3%A9/</guid>
-      <description>Dans cette section, vous trouverez les différentes présentations faites en Culture Générale pendant ma formation en SIO SISR
-L&amp;rsquo;éco-responsabilité: Du papier au clavier 
-Maisons du monde: Peut-on se sentir chez soi dans n&amp;rsquo;importe quelle maison?</description>
-    </item>
-    
-    <item>
       <title>Gestion des items</title>
       <link>https://sebastienct.github.io/portfolio-sisr/notes/ansible/general/items/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://sebastienct.github.io/portfolio-sisr/notes/ansible/general/items/</guid>
       <description>basic Item  Variable ma_var:  - var1  - var2  - var3 Task - name: test d&amp;#39;une variable  debug:  msg: &amp;#34;{{ item }}&amp;#34;  with_items:  - ma_var     sub_elements users:  - name: alice  authorized:  - /tmp/alice/onekey.pub  - /tmp/alice/twokey.pub  mysql:  - ma_var  hosts:  - &amp;#34;%&amp;#34;  - &amp;#34;127.0.0.1&amp;#34;  - &amp;#34;::1&amp;#34;  - &amp;#34;localhost&amp;#34;  privs:  - &amp;#34;*.</description>
-    </item>
-    
-    <item>
-      <title>HA</title>
-      <link>https://sebastienct.github.io/portfolio-sisr/posts/articles/pfsense/ha/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://sebastienct.github.io/portfolio-sisr/posts/articles/pfsense/ha/</guid>
-      <description>Configuration d&amp;rsquo;un HA(CARP) avec PFsense Cette methode doit s&amp;rsquo;appliquer sur les deux pare-feu entrant dans le projet de synchronisation et la haute disponibilité.
-Création d&amp;rsquo;une interface dédiée ( non obligatoire ) Créer et configurer une interface dédiée pour relier les 2 pare-feu PFsense.
-Configuration des IP Pour créer le CARP, il faut 3 IP dédiées dans chaque réseaux pour les pare-feu
-Ouvrir le menu Firewall / Virtual IPs Pour chaque réseau:</description>
-    </item>
-    
-    <item>
-      <title>Installation</title>
-      <link>https://sebastienct.github.io/portfolio-sisr/posts/articles/pfsense/installation/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://sebastienct.github.io/portfolio-sisr/posts/articles/pfsense/installation/</guid>
-      <description></description>
     </item>
     
     <item>
@@ -492,15 +502,6 @@ Ouvrir le menu Firewall / Virtual IPs Pour chaque réseau:</description>
       <guid>https://sebastienct.github.io/portfolio-sisr/posts/formation/publications/veille/</guid>
       <description>Dans cette section, vous trouverez ma publication sur ma veille technologique
 Veille Technologique : Présentation et utilisation d&amp;rsquo;Ansible</description>
-    </item>
-    
-    <item>
-      <title>Virtualbox</title>
-      <link>https://sebastienct.github.io/portfolio-sisr/posts/articles/virtualbox/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://sebastienct.github.io/portfolio-sisr/posts/articles/virtualbox/</guid>
-      <description>Ajout d&amp;rsquo;une interface réseau interne en ligne de commande VBoxManage modifyvm nom_de_la_vm --nic6 intnet VBoxManage modifyvm nom_de_la_vm --intnet6 &amp;#34;nom_interface&amp;#34; Eteindre une VM # extinction VBoxManage controlvm &amp;#34;nom de la vm&amp;#34; poweroff Copier un document vers une VM VBoxManage guestcontrol &amp;#39;nom de la vm&amp;#39; copyto &amp;#39;fichier&amp;#39; dossier_distant --username &amp;#34;utilisateur&amp;#34; --password &amp;#34;mot de passe&amp;#34; </description>
     </item>
     
     
