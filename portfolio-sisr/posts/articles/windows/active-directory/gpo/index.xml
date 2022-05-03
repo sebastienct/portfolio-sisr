@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Active Directory on Portfolio SIO SISR de Sébastien C</title>
-    <link>https://sebastienc.github.io/portfolio-sisr/posts/articles/windows/active-directory/gpo/</link>
+    <link>https://sebastienct.github.io/portfolio-sisr/posts/articles/windows/active-directory/gpo/</link>
     <description>Recent content in Active Directory on Portfolio SIO SISR de Sébastien C</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>fr-fr</language>
-    <lastBuildDate>Sun, 24 Oct 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://sebastienc.github.io/portfolio-sisr/posts/articles/windows/active-directory/gpo/index.xml" rel="self" type="application/rss+xml" /><item>
+    <lastBuildDate>Sun, 24 Oct 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://sebastienct.github.io/portfolio-sisr/posts/articles/windows/active-directory/gpo/index.xml" rel="self" type="application/rss+xml" /><item>
       <title>Création d&#39;une Politique de mot de passe</title>
-      <link>https://sebastienc.github.io/portfolio-sisr/posts/articles/windows/active-directory/gpo/password-policy/</link>
+      <link>https://sebastienct.github.io/portfolio-sisr/posts/articles/windows/active-directory/gpo/password-policy/</link>
       <pubDate>Sun, 24 Oct 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://sebastienc.github.io/portfolio-sisr/posts/articles/windows/active-directory/gpo/password-policy/</guid>
+      <guid>https://sebastienct.github.io/portfolio-sisr/posts/articles/windows/active-directory/gpo/password-policy/</guid>
       <description>Afin de garantir une bonne sécurité de notre infrastructure, il est recommandé par l’ANSSI de respecter quelques règles dans la politique d’élaboration des mots de passe. Pour rappel un mot de passe fort :
   est unique et non réutilisable pour une autre utilité
   ne possède pas de lien avec la personne
@@ -21,10 +21,10 @@
     
     <item>
       <title>Installation d&#39;un MSI par GPO</title>
-      <link>https://sebastienc.github.io/portfolio-sisr/posts/articles/windows/active-directory/gpo/msi/</link>
+      <link>https://sebastienct.github.io/portfolio-sisr/posts/articles/windows/active-directory/gpo/msi/</link>
       <pubDate>Sun, 24 Oct 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://sebastienc.github.io/portfolio-sisr/posts/articles/windows/active-directory/gpo/msi/</guid>
+      <guid>https://sebastienct.github.io/portfolio-sisr/posts/articles/windows/active-directory/gpo/msi/</guid>
       <description>Cette procédure à pour but d&amp;rsquo;installer par GPO, un programme avec l&amp;rsquo;extension .MSI, sur l&amp;rsquo;ensemble des postes d&amp;rsquo;un domaine, d&amp;rsquo;une OU
 Cette procédure décrira les étapes pour installer Firefox ESR
 Préparation Création d&amp;rsquo;un dossier Partagé  Créer sur le serveur un dossier partagé Ajouter les droits de lectures aux ordinateurs du domaine  Récupération de l&amp;rsquo;installateur  Récupérer sur le site de l&amp;rsquo;éditeur, l&amp;rsquo;installateur au format MSI copier l&amp;rsquo;installateur dans le dossier partagé  Création de la GPO Dans la fenêtre &amp;ldquo;Group Policy Management&amp;rdquo; créer une nouvelle GPO nommée &amp;ldquo;InstallPackage&amp;rdquo;</description>
