@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Password on Portfolio SIO SISR de Sébastien C</title>
+    <link>https://sebastienc.portfolio-sisr.github.io/tags/password/</link>
+    <description>Recent content in Password on Portfolio SIO SISR de Sébastien C</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>fr-fr</language>
+    <lastBuildDate>Sun, 24 Oct 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://sebastienc.portfolio-sisr.github.io/tags/password/index.xml" rel="self" type="application/rss+xml" /><item>
+      <title>Création d&#39;une Politique de mot de passe</title>
+      <link>https://sebastienc.portfolio-sisr.github.io/posts/articles/windows/active-directory/gpo/password-policy/</link>
+      <pubDate>Sun, 24 Oct 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://sebastienc.portfolio-sisr.github.io/posts/articles/windows/active-directory/gpo/password-policy/</guid>
+      <description>Afin de garantir une bonne sécurité de notre infrastructure, il est recommandé par l’ANSSI de respecter quelques règles dans la politique d’élaboration des mots de passe. Pour rappel un mot de passe fort :
+  est unique et non réutilisable pour une autre utilité
+  ne possède pas de lien avec la personne
+  est composé de 12 caractères MINIMUM
+  est composé de caractères Alphanumérique et de caractère spéciaux</description>
+    </item>
+    
+    
+  </channel>
+</rss>
