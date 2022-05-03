@@ -2,39 +2,183 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Notes on Portfolio SIO SISR de Sébastien C</title>
-    <link>https://sebastienc.portfolio-sisr.github.io/notes/</link>
+    <link>https://sebastienc.github.io/portfolio-sisr/notes/</link>
     <description>Recent content in Notes on Portfolio SIO SISR de Sébastien C</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>fr-fr</language>
-    <lastBuildDate>Tue, 08 Jun 2010 08:06:25 +0600</lastBuildDate><atom:link href="https://sebastienc.portfolio-sisr.github.io/notes/index.xml" rel="self" type="application/rss+xml" /><item>
+    <lastBuildDate>Tue, 08 Jun 2010 08:06:25 +0600</lastBuildDate><atom:link href="https://sebastienc.github.io/portfolio-sisr/notes/index.xml" rel="self" type="application/rss+xml" /><item>
       <title>Installation</title>
-      <link>https://sebastienc.portfolio-sisr.github.io/notes/ansible/general/install/</link>
+      <link>https://sebastienc.github.io/portfolio-sisr/notes/ansible/general/install/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://sebastienc.portfolio-sisr.github.io/notes/ansible/general/install/</guid>
+      <guid>https://sebastienc.github.io/portfolio-sisr/notes/ansible/general/install/</guid>
       <description>Installation d&amp;#39;ansible Création de l&amp;rsquo;environnement virtuel
 python3 -m venv .PythonEnv/ansible Installation d&amp;rsquo;Ansible
 python3 -m pip install ansible     </description>
     </item>
     
+    <item>
+      <title>Resultados de Búsqueda</title>
+      <link>https://sebastienc.github.io/portfolio-sisr/search/</link>
+      <pubDate>Tue, 08 Jun 2010 08:06:25 +0600</pubDate>
+      
+      <guid>https://sebastienc.github.io/portfolio-sisr/search/</guid>
+      <description>Este archivo existe únicamente para responder a la URL /search con la plantilla de diseño search relacionada.
+No se muestra ningún contenido aquí, todo el contenido se basa en la plantilla layouts/page/search.html
+Establecer una prioridad muy baja en el mapa del sitio le dirá a los motores de búsqueda que éste no es un contenido importante.
+Esta implementación utiliza Fusejs, jquery y mark.js
+Configuración inicial La búsqueda depende del tipo de contenido de salida adicional de JSON en config.</description>
+    </item>
     
+    <item>
+      <title>Search Results</title>
+      <link>https://sebastienc.github.io/portfolio-sisr/search/</link>
+      <pubDate>Tue, 08 Jun 2010 08:06:25 +0600</pubDate>
+      
+      <guid>https://sebastienc.github.io/portfolio-sisr/search/</guid>
+      <description>This file exists solely to respond to /search URL with the related search layout template.
+No content shown here is rendered, all content is based in the template layouts/page/search.html
+Setting a very low sitemap priority will tell search engines this is not important content.
+This implementation uses Fusejs, jquery and mark.js
+Initial setup Search depends on additional output content type of JSON in config.toml ``` [outputs] home = [&amp;ldquo;HTML&amp;rdquo;, &amp;ldquo;JSON&amp;rdquo;] ```</description>
+    </item>
     
+    <item>
+      <title>Search Results</title>
+      <link>https://sebastienc.github.io/portfolio-sisr/search/</link>
+      <pubDate>Tue, 08 Jun 2010 08:06:25 +0600</pubDate>
+      
+      <guid>https://sebastienc.github.io/portfolio-sisr/search/</guid>
+      <description>This file exists solely to respond to /search URL with the related search layout template.
+No content shown here is rendered, all content is based in the template layouts/page/search.html
+Setting a very low sitemap priority will tell search engines this is not important content.
+This implementation uses Fusejs, jquery and mark.js
+Initial setup Search depends on additional output content type of JSON in config.toml ``` [outputs] home = [&amp;ldquo;HTML&amp;rdquo;, &amp;ldquo;JSON&amp;rdquo;] ```</description>
+    </item>
     
+    <item>
+      <title>Search Results</title>
+      <link>https://sebastienc.github.io/portfolio-sisr/search/</link>
+      <pubDate>Tue, 08 Jun 2010 08:06:25 +0600</pubDate>
+      
+      <guid>https://sebastienc.github.io/portfolio-sisr/search/</guid>
+      <description>This file exists solely to respond to /search URL with the related search layout template.
+No content shown here is rendered, all content is based in the template layouts/page/search.html
+Setting a very low sitemap priority will tell search engines this is not important content.
+This implementation uses Fusejs, jquery and mark.js
+Initial setup Search depends on additional output content type of JSON in config.toml ``` [outputs] home = [&amp;ldquo;HTML&amp;rdquo;, &amp;ldquo;JSON&amp;rdquo;] ```</description>
+    </item>
     
+    <item>
+      <title>Search Results</title>
+      <link>https://sebastienc.github.io/portfolio-sisr/search/</link>
+      <pubDate>Tue, 08 Jun 2010 08:06:25 +0600</pubDate>
+      
+      <guid>https://sebastienc.github.io/portfolio-sisr/search/</guid>
+      <description>This file exists solely to respond to /search URL with the related search layout template.
+No content shown here is rendered, all content is based in the template layouts/page/search.html
+Setting a very low sitemap priority will tell search engines this is not important content.
+This implementation uses Fusejs, jquery and mark.js
+Initial setup Search depends on additional output content type of JSON in config.toml ``` [outputs] home = [&amp;ldquo;HTML&amp;rdquo;, &amp;ldquo;JSON&amp;rdquo;] ```</description>
+    </item>
     
+    <item>
+      <title>Search Results</title>
+      <link>https://sebastienc.github.io/portfolio-sisr/search/</link>
+      <pubDate>Tue, 08 Jun 2010 08:06:25 +0600</pubDate>
+      
+      <guid>https://sebastienc.github.io/portfolio-sisr/search/</guid>
+      <description>This file exists solely to respond to /search URL with the related search layout template.
+No content shown here is rendered, all content is based in the template layouts/page/search.html
+Setting a very low sitemap priority will tell search engines this is not important content.
+This implementation uses Fusejs, jquery and mark.js
+Initial setup Search depends on additional output content type of JSON in config.toml ``` [outputs] home = [&amp;ldquo;HTML&amp;rdquo;, &amp;ldquo;JSON&amp;rdquo;] ```</description>
+    </item>
     
+    <item>
+      <title>Search Results</title>
+      <link>https://sebastienc.github.io/portfolio-sisr/search/</link>
+      <pubDate>Tue, 08 Jun 2010 08:06:25 +0600</pubDate>
+      
+      <guid>https://sebastienc.github.io/portfolio-sisr/search/</guid>
+      <description>This file exists solely to respond to /search URL with the related search layout template.
+No content shown here is rendered, all content is based in the template layouts/page/search.html
+Setting a very low sitemap priority will tell search engines this is not important content.
+This implementation uses Fusejs, jquery and mark.js
+Initial setup Search depends on additional output content type of JSON in config.toml ``` [outputs] home = [&amp;ldquo;HTML&amp;rdquo;, &amp;ldquo;JSON&amp;rdquo;] ```</description>
+    </item>
     
+    <item>
+      <title>Search Results</title>
+      <link>https://sebastienc.github.io/portfolio-sisr/search/</link>
+      <pubDate>Tue, 08 Jun 2010 08:06:25 +0600</pubDate>
+      
+      <guid>https://sebastienc.github.io/portfolio-sisr/search/</guid>
+      <description>This file exists solely to respond to /search URL with the related search layout template.
+No content shown here is rendered, all content is based in the template layouts/page/search.html
+Setting a very low sitemap priority will tell search engines this is not important content.
+This implementation uses Fusejs, jquery and mark.js
+Initial setup Search depends on additional output content type of JSON in config.toml ``` [outputs] home = [&amp;ldquo;HTML&amp;rdquo;, &amp;ldquo;JSON&amp;rdquo;] ```</description>
+    </item>
     
+    <item>
+      <title>Search Results</title>
+      <link>https://sebastienc.github.io/portfolio-sisr/search/</link>
+      <pubDate>Tue, 08 Jun 2010 08:06:25 +0600</pubDate>
+      
+      <guid>https://sebastienc.github.io/portfolio-sisr/search/</guid>
+      <description>This file exists solely to respond to /search URL with the related search layout template.
+No content shown here is rendered, all content is based in the template layouts/page/search.html
+Setting a very low sitemap priority will tell search engines this is not important content.
+This implementation uses Fusejs, jquery and mark.js
+Initial setup Search depends on additional output content type of JSON in config.toml ``` [outputs] home = [&amp;ldquo;HTML&amp;rdquo;, &amp;ldquo;JSON&amp;rdquo;] ```</description>
+    </item>
     
+    <item>
+      <title>Search Results</title>
+      <link>https://sebastienc.github.io/portfolio-sisr/search/</link>
+      <pubDate>Tue, 08 Jun 2010 08:06:25 +0600</pubDate>
+      
+      <guid>https://sebastienc.github.io/portfolio-sisr/search/</guid>
+      <description>This file exists solely to respond to /search URL with the related search layout template.
+No content shown here is rendered, all content is based in the template layouts/page/search.html
+Setting a very low sitemap priority will tell search engines this is not important content.
+This implementation uses Fusejs, jquery and mark.js
+Initial setup Search depends on additional output content type of JSON in config.toml ``` [outputs] home = [&amp;ldquo;HTML&amp;rdquo;, &amp;ldquo;JSON&amp;rdquo;] ```</description>
+    </item>
     
+    <item>
+      <title>Search Results</title>
+      <link>https://sebastienc.github.io/portfolio-sisr/search/</link>
+      <pubDate>Tue, 08 Jun 2010 08:06:25 +0600</pubDate>
+      
+      <guid>https://sebastienc.github.io/portfolio-sisr/search/</guid>
+      <description>This file exists solely to respond to /search URL with the related search layout template.
+No content shown here is rendered, all content is based in the template layouts/page/search.html
+Setting a very low sitemap priority will tell search engines this is not important content.
+This implementation uses Fusejs, jquery and mark.js
+Initial setup Search depends on additional output content type of JSON in config.toml ``` [outputs] home = [&amp;ldquo;HTML&amp;rdquo;, &amp;ldquo;JSON&amp;rdquo;] ```</description>
+    </item>
     
+    <item>
+      <title>অনুসন্ধানের ফলাফল</title>
+      <link>https://sebastienc.github.io/portfolio-sisr/search/</link>
+      <pubDate>Tue, 08 Jun 2010 08:06:25 +0600</pubDate>
+      
+      <guid>https://sebastienc.github.io/portfolio-sisr/search/</guid>
+      <description>This file exists solely to respond to /search URL with the related search layout template.
+No content shown here is rendered, all content is based in the template layouts/page/search.html
+Setting a very low sitemap priority will tell search engines this is not important content.
+This implementation uses Fusejs, jquery and mark.js
+Initial setup Search depends on additional output content type of JSON in config.toml ``` [outputs] home = [&amp;ldquo;HTML&amp;rdquo;, &amp;ldquo;JSON&amp;rdquo;] ```</description>
+    </item>
     
     <item>
       <title>base</title>
-      <link>https://sebastienc.portfolio-sisr.github.io/notes/ansible/windows/base/</link>
+      <link>https://sebastienc.github.io/portfolio-sisr/notes/ansible/windows/base/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://sebastienc.portfolio-sisr.github.io/notes/ansible/windows/base/</guid>
+      <guid>https://sebastienc.github.io/portfolio-sisr/notes/ansible/windows/base/</guid>
       <description>Installation Téléchargement du script
 Invoke-WebRequest -OutFile ansible.ps1 https://raw.githubusercontent.com/ansible/ansible/devel/examples/scripts/ConfigureRemotingForAnsible.ps1 Lancement du script
 .\ansible.ps1 -CertValidityDays 3650 -EnableCredSSP     Condition     </description>
@@ -42,10 +186,10 @@ Invoke-WebRequest -OutFile ansible.ps1 https://raw.githubusercontent.com/ansible
     
     <item>
       <title>Gestion des items</title>
-      <link>https://sebastienc.portfolio-sisr.github.io/notes/ansible/general/items/</link>
+      <link>https://sebastienc.github.io/portfolio-sisr/notes/ansible/general/items/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://sebastienc.portfolio-sisr.github.io/notes/ansible/general/items/</guid>
+      <guid>https://sebastienc.github.io/portfolio-sisr/notes/ansible/general/items/</guid>
       <description>basic Item  Variable ma_var:  - var1  - var2  - var3 Task - name: test d&amp;#39;une variable  debug:  msg: &amp;#34;{{ item }}&amp;#34;  with_items:  - ma_var     sub_elements users:  - name: alice  authorized:  - /tmp/alice/onekey.pub  - /tmp/alice/twokey.pub  mysql:  - ma_var  hosts:  - &amp;#34;%&amp;#34;  - &amp;#34;127.0.0.1&amp;#34;  - &amp;#34;::1&amp;#34;  - &amp;#34;localhost&amp;#34;  privs:  - &amp;#34;*.</description>
     </item>
     
