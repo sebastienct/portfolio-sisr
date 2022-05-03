@@ -2,15 +2,15 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Ansible on Portfolio SIO SISR de Sébastien C</title>
-    <link>https://sebastienct.github.io/portfolio-sisr/notes/ansible/</link>
+    <link>https://sebastienc.portfolio-sisr.github.io/notes/ansible/</link>
     <description>Recent content in Ansible on Portfolio SIO SISR de Sébastien C</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>fr-fr</language><atom:link href="https://sebastienct.github.io/portfolio-sisr/notes/ansible/index.xml" rel="self" type="application/rss+xml" /><item>
+    <language>fr-fr</language><atom:link href="https://sebastienc.portfolio-sisr.github.io/notes/ansible/index.xml" rel="self" type="application/rss+xml" /><item>
       <title>Installation</title>
-      <link>https://sebastienct.github.io/portfolio-sisr/notes/ansible/general/install/</link>
+      <link>https://sebastienc.portfolio-sisr.github.io/notes/ansible/general/install/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://sebastienct.github.io/portfolio-sisr/notes/ansible/general/install/</guid>
+      <guid>https://sebastienc.portfolio-sisr.github.io/notes/ansible/general/install/</guid>
       <description>Installation d&amp;#39;ansible Création de l&amp;rsquo;environnement virtuel
 python3 -m venv .PythonEnv/ansible Installation d&amp;rsquo;Ansible
 python3 -m pip install ansible     </description>
@@ -18,10 +18,10 @@ python3 -m pip install ansible     </description>
     
     <item>
       <title>base</title>
-      <link>https://sebastienct.github.io/portfolio-sisr/notes/ansible/windows/base/</link>
+      <link>https://sebastienc.portfolio-sisr.github.io/notes/ansible/windows/base/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://sebastienct.github.io/portfolio-sisr/notes/ansible/windows/base/</guid>
+      <guid>https://sebastienc.portfolio-sisr.github.io/notes/ansible/windows/base/</guid>
       <description>Installation Téléchargement du script
 Invoke-WebRequest -OutFile ansible.ps1 https://raw.githubusercontent.com/ansible/ansible/devel/examples/scripts/ConfigureRemotingForAnsible.ps1 Lancement du script
 .\ansible.ps1 -CertValidityDays 3650 -EnableCredSSP     Condition     </description>
@@ -29,10 +29,10 @@ Invoke-WebRequest -OutFile ansible.ps1 https://raw.githubusercontent.com/ansible
     
     <item>
       <title>Gestion des items</title>
-      <link>https://sebastienct.github.io/portfolio-sisr/notes/ansible/general/items/</link>
+      <link>https://sebastienc.portfolio-sisr.github.io/notes/ansible/general/items/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://sebastienct.github.io/portfolio-sisr/notes/ansible/general/items/</guid>
+      <guid>https://sebastienc.portfolio-sisr.github.io/notes/ansible/general/items/</guid>
       <description>basic Item  Variable ma_var:  - var1  - var2  - var3 Task - name: test d&amp;#39;une variable  debug:  msg: &amp;#34;{{ item }}&amp;#34;  with_items:  - ma_var     sub_elements users:  - name: alice  authorized:  - /tmp/alice/onekey.pub  - /tmp/alice/twokey.pub  mysql:  - ma_var  hosts:  - &amp;#34;%&amp;#34;  - &amp;#34;127.0.0.1&amp;#34;  - &amp;#34;::1&amp;#34;  - &amp;#34;localhost&amp;#34;  privs:  - &amp;#34;*.</description>
     </item>
     

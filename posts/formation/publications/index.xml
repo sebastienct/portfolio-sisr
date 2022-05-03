@@ -2,37 +2,36 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Publications on Portfolio SIO SISR de Sébastien C</title>
-    <link>https://sebastienct.github.io/portfolio-sisr/posts/formation/publications/</link>
+    <link>https://sebastienc.portfolio-sisr.github.io/posts/formation/publications/</link>
     <description>Recent content in Publications on Portfolio SIO SISR de Sébastien C</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>fr-fr</language>
-    <lastBuildDate>Tue, 08 Feb 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://sebastienct.github.io/portfolio-sisr/posts/formation/publications/index.xml" rel="self" type="application/rss+xml" /><item>
-      <title>Culture Générale</title>
-      <link>https://sebastienct.github.io/portfolio-sisr/posts/formation/publications/cultg%C3%A9/</link>
-      <pubDate>Tue, 08 Feb 2022 00:00:00 +0000</pubDate>
+    <language>fr-fr</language><atom:link href="https://sebastienc.portfolio-sisr.github.io/posts/formation/publications/index.xml" rel="self" type="application/rss+xml" /><item>
+      <title>Anglais</title>
+      <link>https://sebastienc.portfolio-sisr.github.io/posts/formation/publications/anglais/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://sebastienct.github.io/portfolio-sisr/posts/formation/publications/cultg%C3%A9/</guid>
+      <guid>https://sebastienc.portfolio-sisr.github.io/posts/formation/publications/anglais/</guid>
+      <description>Dans cette section, vous trouverez les différentes présentations faites en cours d&amp;rsquo;anglais pendant ma formation en SIO SISR
+Richard Stallman and Linus Torvalds</description>
+    </item>
+    
+    <item>
+      <title>Culture Générale</title>
+      <link>https://sebastienc.portfolio-sisr.github.io/posts/formation/publications/cultg%C3%A9/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://sebastienc.portfolio-sisr.github.io/posts/formation/publications/cultg%C3%A9/</guid>
       <description>Dans cette section, vous trouverez les différentes présentations faites en Culture Générale pendant ma formation en SIO SISR
 L&amp;rsquo;éco-responsabilité: Du papier au clavier 
 Maisons du monde: Peut-on se sentir chez soi dans n&amp;rsquo;importe quelle maison?</description>
     </item>
     
     <item>
-      <title>Anglais</title>
-      <link>https://sebastienct.github.io/portfolio-sisr/posts/formation/publications/anglais/</link>
-      <pubDate>Tue, 11 Jan 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://sebastienct.github.io/portfolio-sisr/posts/formation/publications/anglais/</guid>
-      <description>Dans cette section, vous trouverez les différentes présentations faites en cours d&amp;rsquo;anglais pendant ma formation en SIO SISR.
-Richard Stallman and Linus Torvalds Ce travail à été réalisé en binôme.</description>
-    </item>
-    
-    <item>
       <title>Veille technologique</title>
-      <link>https://sebastienct.github.io/portfolio-sisr/posts/formation/publications/veille/</link>
+      <link>https://sebastienc.portfolio-sisr.github.io/posts/formation/publications/veille/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://sebastienct.github.io/portfolio-sisr/posts/formation/publications/veille/</guid>
+      <guid>https://sebastienc.portfolio-sisr.github.io/posts/formation/publications/veille/</guid>
       <description>Dans cette section, vous trouverez ma publication sur ma veille technologique
 Veille Technologique : Présentation et utilisation d&amp;rsquo;Ansible</description>
     </item>

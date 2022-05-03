@@ -2,29 +2,29 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Linux on Portfolio SIO SISR de Sébastien C</title>
-    <link>https://sebastienct.github.io/portfolio-sisr/tags/linux/</link>
+    <link>https://sebastienc.portfolio-sisr.github.io/tags/linux/</link>
     <description>Recent content in Linux on Portfolio SIO SISR de Sébastien C</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>fr-fr</language>
-    <lastBuildDate>Sun, 27 Feb 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://sebastienct.github.io/portfolio-sisr/tags/linux/index.xml" rel="self" type="application/rss+xml" /><item>
+    <lastBuildDate>Sun, 27 Feb 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://sebastienc.portfolio-sisr.github.io/tags/linux/index.xml" rel="self" type="application/rss+xml" /><item>
       <title>Ajout d&#39;un agent dans le Dashboard</title>
-      <link>https://sebastienct.github.io/portfolio-sisr/posts/articles/zabbix/serveur/hote/agent/</link>
+      <link>https://sebastienc.portfolio-sisr.github.io/posts/articles/zabbix/serveur/hote/agent/</link>
       <pubDate>Sun, 27 Feb 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://sebastienct.github.io/portfolio-sisr/posts/articles/zabbix/serveur/hote/agent/</guid>
+      <guid>https://sebastienc.portfolio-sisr.github.io/posts/articles/zabbix/serveur/hote/agent/</guid>
       <description>Serveur Zabbix Connexion au serveur Ouvrir dans un navigateur l&amp;rsquo;adresse du serveur Zabbix
-Ajout du nouvel Hote Dans Configuration/Hosts, cliquer sur &amp;ldquo;Create host&amp;rdquo;
+Ajout du nouvel Hôte Dans Configuration/Hosts, cliquer sur &amp;ldquo;Create host&amp;rdquo;
 Puis ajouter les informations correspondantes au serveur et enregistrer
 Dashboard Dans Monitoring/Dashboard, cliquer sur &amp;ldquo;Edit dashboard&amp;rdquo; en haut a droite
-Ensuite, toujours en haut a droite dans le menu deroulant &amp;ldquo;ADD&amp;rdquo; choisir add page et choisir le nom adéquat au serveur (ex: Serveur Web) avec une periode de 30 seconde.</description>
+Ensuite, toujours en haut a droite dans le menu déroulant &amp;ldquo;ADD&amp;rdquo; choisir add page et choisir le nom adéquat au serveur (ex: Serveur Web) avec une période de 30 secondes.</description>
     </item>
     
     <item>
       <title>Installation de l&#39;agent sur un poste Linux</title>
-      <link>https://sebastienct.github.io/portfolio-sisr/posts/articles/zabbix/agent/linux/</link>
+      <link>https://sebastienc.portfolio-sisr.github.io/posts/articles/zabbix/agent/linux/</link>
       <pubDate>Sun, 27 Feb 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://sebastienct.github.io/portfolio-sisr/posts/articles/zabbix/agent/linux/</guid>
+      <guid>https://sebastienc.portfolio-sisr.github.io/posts/articles/zabbix/agent/linux/</guid>
       <description>Serveur Web Installation de l&amp;rsquo;agent Zabbix Récupération des sources Dans un terminal
 wget https://repo.zabbix.com/zabbix/5.4/debian/pool/main/z/zabbix-release/zabbix-release_5.4-1%2Bdebian10_all.deb Installation du paquet Dans un terminal
 sudo dpkg -i zabbix-release_5.4-1+debian10_all.deb modification des configurations de l&amp;rsquo;agent Ouvrir le fichier /etc/zabbix/zabbix.agentd.conf en tant que root
